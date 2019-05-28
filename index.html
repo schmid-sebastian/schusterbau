@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=1.0, minimum-scale=0.6, maximum-scale=1.5">
+        <meta charset="utf-8">
+        <title>Bauunternehmen Schuster GmbH & Co.KG</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Work+Sans|Grand+Hotel|Mr+De+Haviland"     rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src="script.js"></script>
+    </head>
+
+    <body onLoad="sizeFlipbox();sizeLogo()" onresize="sizeFlipbox();sizeLogo()">
+        <header>
+            <h1 class="logo"><a href="/index.html"><img id="logoimg" src="Pictures/Logo3.png"></a></h1>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aktuelles.html">Aktuelles</a></li>
+                <li><a href="/aboutus.html">Über uns</a></li>
+                <li><a href="/kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            </label>
+        </header>
+
+        <div class="banner">
+        </div>
+        
+        <div class="content">
+            <div class="contentwrap">
+                <h1 style="margin-top: 50px">Langjährige Erfahrung zahlt sich aus!</h1>
+                <p>...und dafür steht das Bauunternehmen Schuster GmbH & Co.KG bereits seit mehr als 60 Jahren. Wir sind Ihr kompetenter Ansprechpartner in allen Fragen rund um das Bauwesen. Dies umfasst die individuelle Betreuung während der gesamten Bauzeit: von der Planung über die Konzeptionierung bis hin zur Realisierung - bei uns wird auf jeden Ihrer Wünsche Rücksicht genommen. <br><br>Als traditionsreiches Unternehmen setzen wir stets auf die qualitativ hochwertigste Lösung für Ihr Vorhaben, denn wir verbinden Tradition mit Fortschritt. Um Ihre Wünsche zu erfüllen, kommen stets die neuesten Technologien zum Einsatz: hierfür bieten wir einen modernen Maschinenpark und fachkompetente Mitarbeiter. Wir sind Ihr Spezialist für Intelligenz am Bau. Dafür stehen wir mit unserem Namen.</p>
+
+                <p class="signature">Ihr Alois Schuster</p>
+                <h1 style="margin: 70px 0px 40px 0px">Was können wir für Sie tun?</h1>
+                <div class="container">
+                    <div class="flipboxhalter" onmouseover="showFlipboxtext(0)" onmouseout="hideFlipboxtext(0)">
+                        <div class="flipbox">
+                            <h3>HOCH<wbr>BAU</h3>
+                            <img src="Pictures/hochbau.png" class="flipboxpic">
+                            <p class="flipboxtext">Der Hochbau ist das Teilgebiet des Bauwesens, das sich mit der Planung und Errichtung von Bauwerken befasst, die mehrheitlich oberhalb der Geländelinie liegen.</p>
+                        </div>
+                    </div>
+                    <div class="flipboxhalter" onmouseover="showFlipboxtext(1)" onmouseout="hideFlipboxtext(1)">
+                        <div class="flipbox">
+                            <h3>STALL<wbr>BAU</h3>
+                            <img src="Pictures/stallbau.png" class="flipboxpic">
+                            <p class="flipboxtext">Stalltechnik und Stallbau für Rinder. Von individuellen Liegeboxen für mehr Kuhkomfort über stabile Fressgitter und Systemabtrennungen.</p>
+                        </div>
+                    </div>
+                    <div class="flipboxhalter" onmouseover="showFlipboxtext(2)" onmouseout="hideFlipboxtext(2)">
+                        <div class="flipbox">
+                            <h3>KA<wbr>NAL<wbr>BAU</h3>
+                            <img src="Pictures/Kanal.png" class="flipboxpic">
+                             <p class="flipboxtext">Der Kanalbau ist eine Sparte der Bauwirtschaft, speziell des Tiefbaus, die sich primär mit der Herstellung und Instandhaltung von Abwasserleitungen und -kanälen beschäftigt.</p>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top:50px">Unsere kompetenten Mitarbeiter betreuen Sie gerne in den Bereichen Hochbau, Stallbau und Kanalbau. Dabei erhalten Sie einen rundum Service, damit Sie beruhigt Ihr gesamtes Bauprojekt unserem Team überlassen können. Denn wir sind ein Unternehmen, das ab der Fertigung von Eingabe- und Werksplänen über Reparaturarbeiten bis zur Fertigstellung Ihres Projekts die passende Lösung bietet.</p>
+                <h1 style="margin-top: 70px">Können wir Ihnen helfen?</h1>
+                
+
+                <p>Dann kontaktieren Sie uns noch heute! Über eine <a href="/kontakt.html">unverbindliche Anfrage</a> freuen wir uns sehr. Gerne können Sie auch direkt Ihren <a href="/aboutus.html">individuellen Ansprechpartner</a> ermitteln und diesen persönlich kontaktieren. In jedem Fall freuen wir uns von Ihnen zu hören!<br><br>Bis dahin können Sie sich hier unsere Referenzen ansehen: </p>
+                <div class="contactcontainer">
+                    <div class="contact">
+                        <a href="aktuelles.html">
+                            <img class="contactteaser" src="Pictures/Aktuelles/album3/1.jpg" alt="Referenzen">
+                        </a>
+                    </div>
+                <div id="bottom">
+                    <hr>
+                       <div class="footerwrap">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.8971625907834!2d10.516213981499403!3d48.170063228790305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479c01589cbacfbf%3A0x49f283491e0c4699!2sSchuster+Alois+GmbH+%26+Co+Bauunternehmen!5e0!3m2!1sde!2sde!4v1537951023706" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="social">
+                                <a class="far fa-envelope" href="mailto:info@schusterbau.de"></a>
+                                <a class="fas fa-phone" href="tel:+49123456789"></a>
+                                <ul>
+                                    <li>
+                                        <a class="footer" href="/impressum.html">Impressum</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer" href="/datenschutz.html">Datenschutz</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <div class="copyright">
+                            <p><b>&copy; 2018 Alois Schuster</b><br><br>Bauunternehmen Schuster GmbH&Co.KG<br>Haselbacher Straße 37<br>87745 Eppishausen</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    
+    
+</html>
