@@ -12,18 +12,91 @@ body {
 /* BANNER */
 .banner {
     width: 100%;
-    height: 650px;
+    height: 100vh;
     position: fixed;
     z-index: -1;
-	background-image:url("Pictures/Kontakt/Banner.jpg");
+	background: url("Pictures/1.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
+.banner img {
+    display: block;
+    max-width: 100%;
+    height: 92%;
+    align-content: center;
+    margin: auto;
+    margin-top: 120px;
+}
+
+
+.banner_aktuelles {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+	background: url("Pictures/Aktuelles/1.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.banner_aktuelles img {
+    display: block;
+    max-width: 100%;
+    height: 92%;
+    align-content: center;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.banner_aboutus {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+	background: url("Pictures/Aboutus/1.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.banner_aboutus img {
+    display: block;
+    max-width: 100%;
+    height: 92%;
+    align-content: center;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.banner_kontakt {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+	background: url("Pictures/Kontakt/1.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.banner_kontakt img {
+    display: block;
+    max-width: 100%;
+    height: 92%;
+    align-content: center;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.bannerlaw {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+	background-image:url("Pictures/law.jpg");
+    background-size: cover;
+}
 
 /* CONTENT */
 
 .content {
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
@@ -35,7 +108,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    top: 650px;
+    top: 100vh;
     background-color: white;
     -webkit-box-shadow: 0px -3px 10px gainsboro;
             box-shadow: 0px -3px 10px gainsboro;
@@ -45,10 +118,12 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     max-width: 960px;
+    margin: 0px auto;
+    margin-top: 50px;
 }
 
 h3 {
-    color: black;
+    color: white;
     font-size: 30px;
 }
 
@@ -61,8 +136,233 @@ p {
     margin: 30px 0px;
 }
 
-/*KONTAKT*/
+.signature {
+    font-size: 8vmin;
+    margin: 0px;
+    font-family: 'Mr De Haviland', cursive;
+}
+
+#foto1 {
+    width: 110px;
+    height: 150px;
+    background-image: url(Pictures/Aboutus/Arbeiter2.jpg);
+    background-size: cover;
+}
+
+#foto2 {
+    width: 110px;
+    height: 150px;
+    background-image: url(Pictures/Aboutus/Arbeiter2.jpg);
+    background-size: cover;
+}
+
+#foto3 {
+    width: 110px;
+    height: 150px;
+    background-image: url(Pictures/Aboutus/Arbeiter2.jpg);
+    background-size: cover;
+}
+
+#foto4 {
+    width: 110px;
+    height: 150px;
+    background-image: url(Pictures/Aboutus/Arbeiter2.jpg);
+    background-size: cover;
+}
+
+.beschreibung {
+    width: 100%;
+    height: auto;
+}
+
+.beschreibung li {
+    text-align: left;
+}
+
+.beschreibung ul {
+    list-style-type: none;
+    margin: 0;
+    position: relative;
+    display: inline;
+    top: 20%;
+    
+}
+
+/*FLIPBOX*/
+.flipboxhalter {
+-webkit-perspective: 1000px;
+        perspective: 1000px;
+
+}
+
+.flipbox {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(204,77,77,1);
+    border: solid transparent 1px;
+    border-radius: 15px 50px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 8px 8px 10px grey;
+            box-shadow: 8px 8px 10px grey;
+    -webkit-transform-style:preserve-3d;
+            transform-style:preserve-3d;
+}
+
+.flipboxhalter:hover .flipbox {
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flipboxhalter:hover h3 {
+    display: none;
+}
+
+.flipboxhalter:hover img {
+    display: none;
+}
+
+.flipboxtext {
+    margin: 0;
+    display: none;
+    padding: 15px 5px;
+    font-size: 1px;
+    color: white;
+}
+
+.flipboxhalter:hover .flipboxtext {
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+
 .container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 27% 27% 27%;
+        grid-template-columns: 27% 27% 27%;
+    -webkit-column-gap: 6%;
+    column-gap: 6%;
+}
+
+.container_aktuelles {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+}
+
+.container_aboutus {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    grid-gap: 30px 10%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+
+.flipboxpic {
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    border: none;
+    display: block;
+}
+
+.contactcontainer {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    position: relative;
+    text-align: center;
+}
+
+.contactteaser {
+    max-width: 90%;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 8px 10px grey;
+            box-shadow: 8px 8px 10px grey;
+    transition: all ease-in-out 0.5s;
+}
+
+.contactteaser2 {
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 8px 10px grey;
+            box-shadow: 8px 8px 10px grey;
+    display: none;
+    max-width: 90%;
+}
+
+
+.contactteaser:hover {
+    transform: scale(1.05);
+}
+
+.galery {
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 15px grey;
+            box-shadow: 5px 5px 15px grey;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    width: 960px;
+    height: auto;
+    max-width: 95%
+}
+
+.galery:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.galery2 {
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    width: 960px;
+    height: auto;
+    max-width: 95%;
+}
+
+.galery2:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+/*KONTAKT*/
+.company-info a {
+    color: black;
+    text-decoration: none;
+}
+
+.container_kontakt {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -71,17 +371,17 @@ p {
             box-shadow: 0 0 20px 0 grey;
 }
 
-.container > * {
+.container_kontakt > * {
     padding: 1em;
 }
 
-.container ul {
+.container_kontakt ul {
     list-style: none;
     padding: 0;
     padding-top: 10px;
 }
 
-.container i{
+.container_kontakt i{
     margin-right: 10px;
     line-height: 1.4;
 }
@@ -92,6 +392,11 @@ p {
 
 .company-info h3, .company-info ul {
     margin: 0 0 1rem 0;
+}
+
+.container_kontakt h3 {
+    color: black;
+    font-size: 30px;
 }
 
 .contact {
@@ -144,7 +449,8 @@ p {
     transition: 0.5s ease-out;
 }
 
-/* BOTTOM */
+
+
 /* BOTTOM */
 #bottom {
     text-align: center;
@@ -231,7 +537,7 @@ p {
     border: transparent 1px solid;
     border-radius: 50%;
     padding: 10px 10px;
-    background: #8f9399;
+    background: #0072C6;
 }
 
 .social .fa-envelope:link {
@@ -243,7 +549,7 @@ p {
 }
 
 .social .fa-envelope:hover {
-    background-color: #0072C6;
+    background-color: #8f9399;
     -webkit-transition: .6s ease;
     -o-transition: .6s ease;
     transition: .6s ease;
@@ -257,7 +563,7 @@ p {
     border: transparent 1px solid;
     border-radius: 50%;
     padding: 10px 10px;
-    background: #8f9399;
+    background: rgb(94,214,114);
 }
 
 .social .fa-phone:link {
@@ -269,7 +575,7 @@ p {
 }
 
 .social .fa-phone:hover {
-    background-color: rgb(94,214,114);
+    background-color: #8f9399;
     -webkit-transition: .6s ease;
     -o-transition: .6s ease;
     transition: .6s ease;
@@ -295,6 +601,7 @@ header {
   -webkit-box-shadow: 0px 5px 10px grey;
           box-shadow: 0px 5px 10px grey;
 }
+
 
 
 .nav-toggle {
@@ -481,42 +788,45 @@ nav a:hover {
         -ms-transform: scale(1,1);
             transform: scale(1,1);
   }
-    
-    .container {
+
+    .container_kontakt {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 1fr 2fr;
             grid-template-columns: 1fr 2fr;
     }
     
-    .container > * {
+    .container_kontakt > * {
         padding: 2em;
     }
     
     .company-info h3, .company-info ul {
         text-align: left;
     }
+    
 }
 
 /* FONT-SIZING */
 
 @media screen and (max-width: 614px){
-    .flipboxpic {
-        display: none;
-     }
-    
     h1 {
-        font-size: 35px;
+        font-size: 40px;
     }
     
     h3 {
-        font-size: 26px;
+        font-size: 30px;
     }
     
     p {
-        font-size: 14px;
+        font-size: 20px;
     }
   }
+
+@media screen and (max-width: 616px) {
+    .flipboxpic {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 380px){
     h1 {
@@ -554,4 +864,82 @@ nav a:hover {
         -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
     }
+}
+
+@media screen and (max-height: 600px) {
+    .banner img {
+        max-height: 75%
+    }
+    
+    .banner_aktuelles img {
+        max-height: 75%
+    }
+    
+    .banner_aboutus img {
+        max-height: 75%
+    }
+    
+    .banner_kontakt img {
+        max-height: 75%
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .banner img {
+        margin-top: 100px
+    }
+    
+    .banner_aktuelles img {
+        margin-top: 90px
+    }
+    
+    .banner_aboutus img {
+        margin-top: 90px
+    }
+    
+    .banner_kontakt img {
+        margin-top: 90px
+    }
+}
+
+
+/*Bildergalerie Thumbnails*/
+
+.img-container{
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75); 
+}
+
+.img-container .overlay{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 0.35s;
+}
+
+.img-container img {
+    max-width: 100%;
+}
+
+.img-container:hover .overlay{
+	left: 0;
+}
+.img-container .overlay:hover h1{
+	opacity: 1;
 }

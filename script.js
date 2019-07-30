@@ -7,6 +7,16 @@ function sizeFlipbox() {
     }
 }
 
+function sizeTeaser() {
+    var item = document.getElementsByClassName("teaser");
+    var item2 = document.getElementsByClassName("contactteaser");
+    var hoehe = item2[0].offsetHeight;
+    for(var i=0; i < item.length; i++) {
+        var currentItem = item[i];
+        currentItem.style.height = hoehe +"px";
+    }
+}
+
 function sizeLogo() {
     var logo = document.getElementById("logoimg");
     var pics = document.getElementsByClassName("flipboxpic");
