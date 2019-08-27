@@ -171,45 +171,16 @@ p {
     font-family: 'Mr De Haviland', cursive;
 }
 
-#foto1 {
-    width: 110px;
-    height: 150px;
-    background-image: url(Pictures/Aboutus/Arbeiter2.jpg);
+#foto {
+    width: 120px;
+    height: 146px;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
 }
 
-#foto2 {
-    width: 110px;
-    height: 150px;
-    background-image: url(Pictures/Aboutus/Arbeiter2.jpg);
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-}
 
-#foto3 {
-    width: 110px;
-    height: 150px;
-    background-image: url(Pictures/Aboutus/Arbeiter2.jpg);
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-}
-
-#foto4 {
-    width: 110px;
-    height: 150px;
-    background-image: url(Pictures/Aboutus/Arbeiter2.jpg);
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-}
 
 .beschreibung {
     width: 100%;
