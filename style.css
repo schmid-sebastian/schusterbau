@@ -820,6 +820,15 @@ nav a:hover {
   }
   
   nav {
+    top: unset;
+    opacity: unset;
+    position: unset;
+    text-align: unset;
+    top: unset;
+    left: unset;
+    width: unset;
+    transform: unset;
+
     all: unset;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
